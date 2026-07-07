@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flipkart Layout Clone</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f1f3f6;
+    padding:20px;
+}
+
+
+.top-menu{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.top-menu button{
+    padding:10px 25px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:#e0e0e0;
+}
+
+.active{
+    background:#f7d700;
+}
+
+.location{
+    margin-left:auto;
+    font-weight:bold;
+}
+
+
+.offer-section{
+    display:flex;
+    gap:10px;
+    margin-bottom:15px;
+}
+
+.offer1{
+    flex:4;
+    height:25px;
+    background:turquoise;
+}
+
+.offer2{
+    flex:1;
+    height:25px;
+    background:lightgreen;
+}
+
+
+.categories{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-bottom:20px;
+}
+
+.box{
+    width:75px;
+    height:80px;
+    border:3px solid #8bc34a;
+    background:white;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding-top:10px;
+}
+
+
+.ads{
+    display:flex;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+.ad{
+    height:180px;
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+}
+
+.ad1{
+    flex:2;
+    background:#7de3ff;
+}
+
+.ad2{
+    flex:2;
+    background:#ff7043;
+}
+
+.ad3{
+    flex:1;
+    background:#f5f5dc;
+}
+
+
+.product-section{
+    border:5px solid #c63d17;
+    border-radius:15px;
+    overflow:hidden;
+    background:white;
+}
+
+.section-header{
+    background:#c63d17;
+    color:white;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.arrow{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    background:white;
+    color:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+}
+
+.products{
+    display:flex;
+    justify-content:space-evenly;
+    gap:15px;
+    padding:20px;
+}
+
+.product-card{
+    width:180px;
+    height:180px;
+    background:#ededed;
+    border-radius:10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.product-card p{
+    font-weight:bold;
+    margin-bottom:8px;
+}
+</style>
+</head>
+
+<body>
+
+
+<div class="top-menu">
+    <button class="active">🛒 Flipkart</button>
+    <button>✈ Travel</button>
+
+    <div class="location">
+        📍 Location : Vadodara
+    </div>
+</div>
+
+
+<div class="offer-section">
+    <div class="offer1"></div>
+    <div class="offer2"></div>
+</div>
+
+
+<div class="categories">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+    <div class="box">Box 4</div>
+    <div class="box">Box 5</div>
+    <div class="box">Box 6</div>
+    <div class="box">Box 7</div>
+    <div class="box">Box 8</div>
+    <div class="box">Box 9</div>
+    <div class="box">Box 10</div>
+    <div class="box">Box 11</div>
+    <div class="box">Box 12</div>
+    <div class="box">Box 13</div>
+    <div class="box">Box 14</div>
+</div>
+
+
+<div class="ads">
+    <div class="ad ad1">Ad Banner 1</div>
+    <div class="ad ad2">Ad Banner 2</div>
+    <div class="ad ad3">Ad Banner 3</div>
+</div>
+
+
+<div class="product-section">
+
+    <div class="section-header">
+        <h2>Home Decor and Furnishing</h2>
+        <div class="arrow">➜</div>
+    </div>
+
+    <div class="products">
+
+        <div class="product-card">
+            <p>Key Holders</p>
+            <span>Min 50% Off</span>
+        </div>
+
+        <div class="product-card">
+            <p>Key Holders</p>
+            <span>Min 50% Off</span>
+        </div>
+
+        <div class="product-card">
+            <p>Key Holders</p>
+            <span>Min 50% Off</span>
+        </div>
+
+        <div class="product-card">
+            <p>Key Holders</p>
+            <span>Min 50% Off</span>
+        </div>
+
+        <div class="product-card">
+            <p>Key Holders</p>
+            <span>Min 50% Off</span>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

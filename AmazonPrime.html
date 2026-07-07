@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Prime</title>
+
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background: black;
+            color: white;
+        }
+
+        .banner{
+            height: 350px;
+            background: linear-gradient(
+                rgba(0,0,0,0.4),
+                rgba(0,0,0,0.9)
+            ),
+            url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoGj-YZEHt6IihSZOlTKKsfvNe42L1yNp_WA&s");
+            background-size:cover;
+            background-position: center;
+            padding: 30px 60px;
+        }
+
+        .logo{
+            color: skyblue;
+            font-size: 45px;
+            font-weight:bold;
+            letter-spacing: 2px;
+        }
+
+        .banner-content{
+            margin-top:80px;
+        }
+
+        .banner h1{
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+
+        .banner p{
+            width: 500px;
+            color: white;
+        }
+
+        .section{
+            padding: 40px 60px;
+        }
+
+        .section h2{
+            margin-bottom: 25px;
+            font-size:30px
+        }
+
+        .movies{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background: black;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .card:hover{
+            transform: translateY(-8px);
+            box-shadow: 0 0 20px blue;
+        }
+
+        .card img{
+            width:100%;
+            height:330px;
+            object-fit: cover;
+        }
+
+        .info{
+            padding: 15px;
+        }
+
+        .title{
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom:10px;
+        }
+
+        .details{
+            color:white;
+            line-height: 1.8;
+            font-size:14px;        
+        }
+
+        .rating{
+            color: white;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Prime_Video.png" alt="Prime Video Logo" style="height:150px; width:auto;">
+         </div>
+        <div class="banner-content">
+            <h1>Trending Hindi Movies & Series</h1>
+            <p>
+                 Watch popular movies and TV shows.
+                 Discover ratings, seasons, languages and more.
+            </p>
+        </div>
+    </div>
+    <br> <br> <br> <br> <br>
+    
+    <div class="section">
+        <h2>Trending Of All Time</h2>
+
+        <div class="movies">
+            
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/M/MV5BYTkxNTNhYjktMTcxNy00OTA5LThlY2ItZjM3YTFjYmQ1ZmYzXkEyXkFqcGc@._V1_QL75_UX190_CR0,2,190,281_.jpg">
+                <div class="info">
+                    <div class="title">The Great Indian Kapil Show</div>
+
+                    <div class="details">
+                        Seasons: 4 <br>
+                        IMDb: <span class="rating">8.2/10</span><br>
+                        Original Language: Hindi<br>
+                        Genre: Comedy
+                    </div>
+                </div>
+            </div>
+
+             <div class="card">
+                <img src="https://static.toiimg.com/thumb/106659251/106659251.jpg?height=746&width=420&resizemode=76&imgsize=115056">
+                <div class="info">
+                    <div class="title">Half CA</div>
+
+                    <div class="details">
+                        Seasons: 2 <br>
+                        IMDb: <span class="rating">8/10</span><br>
+                        Original Language: Hindi<br>
+                        Genre: Drama
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://www.deccanchronicle.com/h-upload/2024/05/14/1089838-panchayatseason3.webp">
+                <div class="info">
+                    <div class="title">Panchayat</div>
+
+                    <div class="details">
+                        Seasons: 4 <br>
+                        IMDb: <span class="rating">8.8/10</span><br>
+                        Original Language: Hindi<br>
+                        Genre: Comedy-Drama
+                    </div>
+                </div>
+            </div>
+
+             <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmxP5Ql3JfjMS56TnSn8t3CsSpgQmVemsDCQ&s">
+                <div class="info">
+                    <div class="title">Mirzapur</div>
+
+                    <div class="details">
+                        Seasons: 3<br>
+                        IMDb: <span class="rating">8.4/10</span><br>
+                        Original Language: Hindi<br>
+                        Genre: Action, Crime, and Thriller Drama
+                    </div>
+                </div>
+            </div>
+
+             <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREOpHHRVOK9daJ6L-UwFzD23U9hgBJ_3CM2w&s">
+                <div class="info">
+                    <div class="title">Farzi</div>
+
+                    <div class="details">
+                        Seasons: 1<br>
+                        IMDb: <span class="rating">8.3/10</span><br>
+                        Original Language: Hindi<br>
+                        Genre: Crime-Thriller, Black-Comedy
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202511/the-family-man-season-3-214347987-16x9_0.jpeg?VersionId=F.MOD_OoOqHf_S5BUZt96Fm3Ehf2hVJB&size=690:388">
+                <div class="info">
+                    <div class="title">The Family Man</div>
+
+                    <div class="details">
+                        Seasons: 3<br>
+                        IMDb: <span class="rating">8.7/10</span><br>
+                        Original Language: Hindi<br>
+                        Genre: Spy Action, Crime Thriller, Comedy-Drama
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://stat4.bollywoodhungama.in/wp-content/uploads/2024/06/Web-Series-Review-KOTA-FACTORY-SEASON-3-rests-on-powerful-performances-a-relatable-plot-and-some-memorable-moments-.jpg">
+                <div class="info">
+                    <div class="title">Kota Factory</div>
+
+                    <div class="details">
+                        Seasons: 3<br>
+                        IMDb: <span class="rating">9.0/10</span><br>
+                        Original Language: Hindi<br>
+                        Genre: Comedy-Drama
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.mid-day.com/images/images/2024/aug/tumbbad-rerelease_d.jpg">
+                <div class="info">
+                    <div class="title">Tumbbad</div>
+
+                    <div class="details">
+                        Seasons: 1<br>
+                        IMDb: <span class="rating">9.0/10</span><br>
+                        Original Language: Hindi<br>
+                        Genre: Dark Fantasy, Thriller, Mythological Horror
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/c0/12/da/c012da224e87f75d00c59d4076ed4c8c.jpg">
+                <div class="info">
+                    <div class="title">Kantara</div>
+
+                    <div class="details">
+                        Seasons: 1<br>
+                        IMDb: <span class="rating">8.8/10</span><br>
+                        Original Language: Hindi<br>
+                        Genre: Action Thriller, Mythological Fantasy
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://wallpaperaccess.com/full/13891678.jpg">
+                <div class="info">
+                    <div class="title">Kalki 2898 AD</div>
+
+                    <div class="details">
+                        Seasons: 1<br>
+                        IMDb: <span class="rating">8.5/10</span><br>
+                        Original Language: Hindi<br>
+                        Genre: Science Fiction, Mythological Fantasy
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://www.m9.news/wp-content/uploads/2025/11/maddock-horror-comedy-universe.jpg">
+                <div class="info">
+                    <div class="title">Stree Universe</div>
+
+                    <div class="details">
+                        Movies: 5<br>
+                        IMDb: <span class="rating">6.85/10</span><br>
+                        Original Language: Hindi<br>
+                        Genre: Horror-Comedy
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/e30b9945313161.56079d226ed91.jpg">
+                <div class="info">
+                    <div class="title">Gangs Of Wasseypur</div>
+
+                    <div class="details">
+                        Movies: 2<br>
+                        IMDb: <span class="rating">8.2/10</span><br>
+                        Original Language: Hindi<br>
+                        Genre: Crime Drama
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+</body>
+</html>

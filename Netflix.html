@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Netflix Trending Movies</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#141414;
+    color:white;
+}
+
+/* Netflix Banner */
+.banner{
+    height:350px;
+    background:linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.9)
+    ),
+    url("https://t4.ftcdn.net/jpg/05/04/91/95/360_F_504919556_wpnMmbFIbKLrY2ciaNDVH0cgEDEFxcrx.jpg");
+    background-size:cover;
+    background-position:center;
+    padding:30px 60px;
+}
+
+.logo{
+    color:#E50914;
+    font-size:45px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.banner-content{
+    margin-top:80px;
+}
+
+.banner h1{
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+.banner p{
+    width:500px;
+    color:#ddd;
+}
+
+.section{
+    padding:40px 60px;
+}
+
+.section h2{
+    margin-bottom:25px;
+    font-size:30px;
+}
+
+/* Movie Cards */
+
+.movies{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1f1f1f;
+    border-radius:12px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px rgba(229,9,20,0.5);
+}
+
+.card img{
+    width:100%;
+    height:330px;
+    object-fit:cover;
+}
+
+.info{
+    padding:15px;
+}
+
+.title{
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.details{
+    color:#cfcfcf;
+    line-height:1.8;
+    font-size:14px;
+}
+
+.rating{
+    color:#FFD700;
+    font-weight:bold;
+}
+</style>
+</head>
+<body>
+
+<div class="banner">
+
+    <div class="logo">NETFLIX</div>
+
+    <div class="banner-content">
+        <h1>Trending Movies & Series</h1>
+
+        <p>
+            Watch the world's most popular movies and TV shows.
+            Discover ratings, seasons, languages and more.
+        </p>
+    </div>
+
+</div>
+
+<div class="section">
+
+<h2>🔥 Trending Of All Time</h2>
+
+<div class="movies">
+
+    <div class="card">
+        <img src="https://i.guim.co.uk/img/media/344f3917f3e40dbb745e498dd31ab84e4b098981/0_901_3000_2400/master/3000.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=e1ffd26623999fcfee0a25b27fc73797">
+        <div class="info">
+            <div class="title">Stranger Things</div>
+
+            <div class="details">
+                Seasons: 5 <br>
+                IMDb: <span class="rating">8.7/10</span><br>
+                Original Language: English<br>
+                Genre: Sci-Fi, Horror
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.immediate.co.uk/production/volatile/sites/3/2020/04/Money-Heist-2ffc443.jpg?quality=90&resize=980,654">
+        <div class="info">
+            <div class="title">Money Heist</div>
+
+            <div class="details">
+                Seasons: 5 <br>
+                IMDb: <span class="rating">8.2/10</span><br>
+                Original Language: Spanish<br>
+                Genre: Crime, Thriller
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://resizing.flixster.com/ChuWz-cdCydj4x4GDG7ngYdfsaU=/620x336/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p14652182_i_h10_ab.jpg">
+        <div class="info">
+            <div class="title">Dark</div>
+
+            <div class="details">
+                Seasons: 3 <br>
+                IMDb: <span class="rating">8.7/10</span><br>
+                Original Language: German<br>
+                Genre: Mystery, Sci-Fi
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://static01.nyt.com/images/2022/11/22/arts/22wednesday-review/22wednesday-review-mediumSquareAt3X.jpg">
+        <div class="info">
+            <div class="title">Wednesday</div>
+
+            <div class="details">
+                Seasons: 2 <br>
+                IMDb: <span class="rating">8.0/10</span><br>
+                Original Language: English<br>
+                Genre: Comedy, Fantasy
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://preview.redd.it/i-didnt-watch-squid-game-yet-will-this-world-accept-me-v0-xefi7mbhwhaf1.jpeg?width=640&crop=smart&auto=webp&s=7115804560e38a95c9839c20ae7aca4aee4b7178">
+        <div class="info">
+            <div class="title">Squid Game</div>
+
+            <div class="details">
+                Seasons: 3 <br>
+                IMDb: <span class="rating">8.0/10</span><br>
+                Original Language: Korean<br>
+                Genre: Thriller, Drama
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvfhyN91Hj12HEF5kgT8TU98spx_2lH-Ek8A&s">
+        <div class="info">
+            <div class="title">Breaking Bad</div>
+
+            <div class="details">
+                Seasons: 5 <br>
+                IMDb: <span class="rating">9.5/10</span><br>
+                Original Language: English<br>
+                Genre: Crime, Drama
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.justwatch.com/backdrop/30175747/s640/peaky-blinders.jpg">
+        <div class="info">
+            <div class="title">Peaky Blinders</div>
+
+            <div class="details">
+                Seasons: 3 <br>
+                IMDb: <span class="rating">9/10</span><br>
+                Original Language: English<br>
+                Genre: Crime, Drama
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.wallpapersden.com/image/download/oppenheimer-movie-poster-hd-cillian-murphy_bmVpbGWUmZqaraWkpJRpZWVlrWtoaGc.jpg">
+        <div class="info">
+            <div class="title">Oppenheimer</div>
+
+            <div class="details">
+                Seasons: 3 <br>
+                IMDb: <span class="rating">8.8/10</span><br>
+                Original Language: English<br>
+                Genre: Biography, Thriller
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://www.slashfilm.com/img/gallery/all-10-conjuring-universe-movies-ranked/intro-1757422683.jpg">
+        <div class="info">
+            <div class="title">The Conjuring Universe</div>
+
+            <div class="details">
+                Movies: 10 <br>
+                IMDb: <span class="rating">6.14/10</span><br>
+                Original Language: English<br>
+                Genre: Supernatural Horror
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://wallpaperaccess.com/full/13891678.jpg">
+        <div class="info">
+            <div class="title">Kalki 2898 AD</div>
+
+            <div class="details">
+                Seasons: 1<br>
+                IMDb: <span class="rating">8.5/10</span><br>
+                Original Language: Hindi<br>
+                Genre: Mythological Science Fiction
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://wallpaperaccess.com/full/7959352.jpg">
+        <div class="info">
+            <div class="title">All Of Us Are Dead</div>
+
+            <div class="details">
+                Seasons: 1<br>
+                IMDb: <span class="rating">7.6/10</span><br>
+                Original Language: Korean<br>
+                Genre: Horror and Survival Thriller
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

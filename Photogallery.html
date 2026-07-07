@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landscape Grid</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 columns */
+      grid-template-rows: repeat(3, 200px);  /* 3 rows */
+      gap: 15px; /* spacing between cells */
+    }
+
+    .grid-item {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .grid-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* ensures image fills the square */
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+        grid-template-rows: auto;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .grid-container {
+        grid-template-columns: 1fr; /* single column on very small screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMeDKcZnuHi6Dy3geFV2ujWeoycMkGVVFPSQ&s" alt="Grassy plain"></div>
+    <div class="grid-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRterqebQhiaIrToGV-YtuIOw9AeUBTYHIXCA&s" alt="Lake with hills"></div>
+    <div class="grid-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTclTrX6-FPeFrQ1BcyN5jkC4WfKpJpeqJ7fA&s" alt="Field with mountains"></div>
+    <div class="grid-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb_UGsEQLxFTEhnk_ZVy2EDtdn_awvgLFu5A&s" alt="Icebergs"></div>
+
+    <div class="grid-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSffMQkxTo7Wl76oHhiAJcw1rCjl-belvNX1w&s" alt="Red rock formations"></div>
+    <div class="grid-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY7_ENxjaqfAvNGYfM9SmYZpwGJUb9rk5N-A&s" alt="Pine forest"></div>
+    <div class="grid-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZjPbGNPVeoaHMqHuFVM8JXMKd00T0tZqdMQ&s" alt="Green meadow"></div>
+    <div class="grid-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIiTOGDI07hYXAsmLIU8nwmTgqdhkNZmmOdw&s" alt="Sandy beach dunes"></div>
+
+    <div class="grid-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNn-uyX_uJ9cQFj6bxbJfoYphs9pc6NkbHew&s" alt="Tree-lined path"></div>
+    <div class="grid-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkDmbP--bBtAM5blwI0ZnO4kmcRjBV3GgQuQ&s" alt="Coastal cliff"></div>
+    <div class="grid-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4B8jbrhZVR9Yupu7liBSsbCCfPMTVty8wng&s" alt="Cave view"></div>
+    <div class="grid-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTclTrX6-FPeFrQ1BcyN5jkC4WfKpJpeqJ7fA&s" alt="Mountain above fields"></div>
+  </div>
+</body>
+</html>

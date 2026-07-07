@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Application Form</title>
+
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      background:#f2f2f2;
+      padding:20px;
+    }
+
+    .container{
+      max-width:1000px;
+      margin:auto;
+      background:white;
+      padding:25px;
+      border:1px solid #ccc;
+    }
+
+    h1{
+      text-align:center;
+      margin-bottom:30px;
+    }
+
+    .section-title{
+      background:#222;
+      color:white;
+      padding:10px;
+      font-weight:bold;
+      text-align:center;
+      margin:25px 0 20px;
+    }
+
+    .row{
+      display:flex;
+      gap:20px;
+      margin-bottom:15px;
+    }
+
+    .field{
+      flex:1;
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    .field label{
+      min-width:160px;
+      font-weight:500;
+    }
+
+    .field input[type="text"],
+    .field input[type="email"],
+    .field input[type="date"]{
+      flex:1;
+      border:none;
+      border-bottom:1px solid #888;
+      padding:5px;
+      background:transparent;
+    }
+
+    .checkbox-group{
+      display:flex;
+      gap:20px;
+      align-items:center;
+    }
+
+    .full-width{
+      width:100%;
+    }
+
+    textarea{
+      width:100%;
+      border:none;
+      border-bottom:1px solid #888;
+      resize:none;
+      padding:5px;
+      background:transparent;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>JOB APPLICATION FORM</h1>
+
+  <div class="section-title">PERSONAL INFORMATION</div>
+
+  <div class="row">
+    <div class="field">
+      <label>Name:</label>
+      <input type="text">
+    </div>
+
+    <div class="field">
+      <label>Date of Birth:</label>
+      <input type="date">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="field full-width">
+      <label>Address:</label>
+      <input type="text">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="field">
+      <label>City, State:</label>
+      <input type="text">
+    </div>
+
+    <div class="field">
+      <label>Email Address:</label>
+      <input type="email">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="field">
+      <label>Phone Number:</label>
+      <input type="text">
+    </div>
+
+    <div class="field">
+      <label>S.S.N:</label>
+      <input type="text">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="field">
+      <label>Position applied for:</label>
+      <input type="text">
+    </div>
+
+    <div class="field">
+      <label>Date available:</label>
+      <input type="date">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="field">
+      <label>Desired Pay:</label>
+
+      <div class="checkbox-group">
+        <input type="checkbox"> Hour
+        <input type="checkbox"> Salary
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="field">
+      <label>Employment desired:</label>
+
+      <div class="checkbox-group">
+        <input type="checkbox"> Full time
+        <input type="checkbox"> Part time
+        <input type="checkbox"> Seasonal
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">EMPLOYMENT ELIGIBILITY</div>
+
+  <div class="row">
+    <div class="field">
+      <label>Legally eligible to work?</label>
+
+      <div class="checkbox-group">
+        <input type="checkbox"> Yes
+        <input type="checkbox"> No
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="field">
+      <label>Worked for this employer?</label>
+
+      <div class="checkbox-group">
+        <input type="checkbox"> Yes
+        <input type="checkbox"> No
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="field full-width">
+      <label>If yes, start and end dates:</label>
+      <input type="text">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="field">
+      <label>Convicted of felony?</label>
+
+      <div class="checkbox-group">
+        <input type="checkbox"> Yes
+        <input type="checkbox"> No
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="field full-width">
+      <label>If yes, explain:</label>
+      <textarea rows="2"></textarea>
+    </div>
+  </div>
+
+  <div class="section-title">EDUCATION</div>
+
+  <div class="row">
+    <div class="field">
+      <label>High School:</label>
+      <input type="text">
+    </div>
+
+    <div class="field">
+      <label>City / State:</label>
+      <input type="text">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="field">
+      <label>From:</label>
+      <input type="text">
+    </div>
+
+    <div class="field">
+      <label>To:</label>
+      <input type="text">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="field">
+      <label>Graduate:</label>
+
+      <div class="checkbox-group">
+        <input type="checkbox"> Yes
+        <input type="checkbox"> No
+      </div>
+    </div>
+
+    <div class="field">
+      <label>Diploma:</label>
+      <input type="text">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="field">
+      <label>College:</label>
+      <input type="text">
+    </div>
+
+    <div class="field">
+      <label>City / State:</label>
+      <input type="text">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="field">
+      <label>From:</label>
+      <input type="text">
+    </div>
+
+    <div class="field">
+      <label>To:</label>
+      <input type="text">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="field">
+      <label>Graduate:</label>
+
+      <div class="checkbox-group">
+        <input type="checkbox"> Yes
+        <input type="checkbox"> No
+      </div>
+    </div>
+
+    <div class="field">
+      <label>Diploma:</label>
+      <input type="text">
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

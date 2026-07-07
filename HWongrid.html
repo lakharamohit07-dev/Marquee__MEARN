@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid Layout</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:20vh;
+}
+
+.container{
+    width:500px;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    grid-template-rows:250px 250px 250px;
+    gap:20px;
+}
+
+.card{
+    border-radius:25px;
+    padding:50px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+}
+
+.card h2{
+    margin-bottom:20px;
+}
+
+.customization{
+    background:#d8d0ff;
+    grid-row:span 2;
+}
+
+.scheduling{
+    background:#f8b9c7;
+    grid-column:span 2;
+}
+
+.wallet{
+    background:#d9ee8a;
+}
+
+.inbox{
+    background:#f7e587;
+}
+
+.send-gifts{
+    background:#f5b26f;
+    grid-column:span 2;
+}
+
+.reminders{
+    background:#cde8ff;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card customization">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvYsIbumW5DmZHlRpNAqD_jijneaU6N4K2zg&s">
+        <h2>Customization</h2>
+        <p>Use a pre-designed template or personalize with video, stickers, fonts and more.</p>
+    </div>
+
+    <div class="card scheduling">
+        <img src="https://cdn.dribbble.com/userupload/36178055/file/original-5b97a6d58fdec8ea979c5057380fbba9.png?format=webp&resize=400x300&vertical=center">
+        <h2>Scheduling</h2>
+        <p>Schedule all your cards and gifts now and we'll send them later.</p>
+    </div>
+
+    <div class="card wallet">
+        <h2>Wallet</h2>
+        <p>Access all your gifts and save up your cash.</p>
+    </div>
+
+    <div class="card inbox">
+        <h2>Inbox</h2>
+        <p>Track your gifts, group chats and sent cards.</p>
+    </div>
+
+    <div class="card send-gifts">
+        <h2>Send Gifts</h2>
+        <p>Send as a group with friends or individually.</p>
+    </div>
+
+    <div class="card reminders">
+        <h2>Reminders</h2>
+        <p>Never miss a birthday again.</p>
+    </div>
+
+</div>
+
+</body>
+</html>

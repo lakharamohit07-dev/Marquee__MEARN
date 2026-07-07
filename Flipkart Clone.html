@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flipkart Clone</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+.header{
+    background:white;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#2874f0;
+}
+
+.search{
+    width:50%;
+}
+
+.search input{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.location{
+    font-size:14px;
+}
+
+.banner{
+    width:90%;
+    height:40px;
+    margin:20px auto;
+    background:linear-gradient(to right,#00d4aa,#8bc34a);
+    border-radius:5px;
+}
+
+.categories{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-around;
+    background:white;
+    padding:15px;
+    border-radius:8px;
+}
+
+.category{
+    text-align:center;
+    font-size:14px;
+}
+
+.category img{
+    width:40px;
+    height:40px;
+    display:block;
+    margin:auto;
+}
+
+.products{
+    width:90%;
+    margin:25px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.offer{
+    background:#ffc107;
+    text-align:center;
+    padding:8px;
+    font-weight:bold;
+}
+
+.title{
+    text-align:center;
+    padding:10px;
+    font-size:18px;
+}
+
+.sub{
+    text-align:center;
+    color:gray;
+    padding-bottom:10px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <div class="logo">Flipkart</div>
+
+    <div class="search">
+        <input type="text" placeholder="Search for products">
+    </div>
+
+    <div class="location">📍 Vadodara, India</div>
+</div>
+
+<div class="banner"></div>
+
+<div class="categories">
+    <div class="category"><br>Bags</div>
+    <div class="category"><br>Fashion</div>
+    <div class="category"><br>Mobile</div>
+    <div class="category"><br>Beauty</div>
+    <div class="category"><br>Computers</div>
+    <div class="category"><br>Electronics</div>
+    <div class="category"><br>Appliances</div>
+    <div class="category"><br>Toys</div>
+</div>
+
+<div class="products">
+
+    <div class="card">
+        <img src="https://rukminim1.flixcart.com/image/1536/1536/xif0q/musical-toy/v/u/8/rolls-royce-phantom-model-car-1-32-scale-exclusive-alloy-metal-original-imah44g8amqpapza.jpeg?q=90">
+        <div class="offer">50% Off</div>
+        <div class="title">Rolls Royce</div>
+        <div class="sub">Image 1</div>
+    </div>
+
+    <div class="card">
+        <img src="https://rukminim1.flixcart.com/image/1536/1536/xif0q/vehicle-pull-along/r/g/1/1-24-porsche-panamera-diecast-metal-pullback-openable-doors-toy-original-imaggtzkjzydfemc.jpeg?q=90">
+        <div class="offer">50% Off</div>
+        <div class="title">Porche</div>
+        <div class="sub">Image 2</div>
+    </div>
+
+    <div class="card">
+        <img src="https://rukminim1.flixcart.com/image/1536/1536/xif0q/vehicle-pull-along/f/7/f/new-toy-car-bmw-m4-1-32-racing-car-model-with-light-sound-open-original-imahm26pytfgggeq.jpeg?q=90">
+        <div class="offer">50% Off</div>
+        <div class="title">BMW</div>
+        <div class="sub">Image 3</div>
+    </div>
+
+    <div class="card">
+        <img src="https://rukminim1.flixcart.com/image/1536/1536/xif0q/shopsy-vehicle-pull-along/k/s/3/lamborghini-car-die-cast-4-wheel-drive-metal-car-pull-back-original-imah5nyda3kgdhsa.jpeg?q=90">
+        <div class="offer">50% Off</div>
+        <div class="title">Lamborghini</div>
+        <div class="sub">Image 4</div>
+    </div>
+
+    <div class="card">
+        <img src="https://rukminim1.flixcart.com/image/1536/1536/xif0q/vehicle-pull-along/b/a/c/1-32-scale-die-cast-metal-model-bugatti-divo-sport-pull-back-car-original-imahkr3krkesyybt.jpeg?q=90">
+        <div class="offer">50% Off</div>
+        <div class="title">Bhughatti</div>
+        <div class="sub">Image 5</div>
+    </div>
+
+    <div class="card">
+        <img src="https://rukminim1.flixcart.com/image/1536/1536/xif0q/remote-control-toy/l/s/3/remote-control-ferrari-car-with-openable-doors-and-rechargeable-original-imagx39rfydyzjgc.jpeg?q=90">
+        <div class="offer">50% Off</div>
+        <div class="title">Ferrari</div>
+        <div class="sub">Image 6</div>
+    </div>
+
+</div>
+
+</head>
+<body>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+/* Footer */
+.footer{
+    background:#111827;
+    color:white;
+    margin-top:auto;
+}
+
+.footer-top{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+    padding:50px;
+}
+
+.footer-section h3,
+.footer-section h4{
+    margin-bottom:15px;
+}
+
+.footer-section p{
+    color:#cbd5e1;
+    line-height:1.6;
+}
+
+.footer-section a{
+    display:block;
+    text-decoration:none;
+    color:#cbd5e1;
+    margin:8px 0;
+    transition:.3s;
+}
+
+.footer-section a:hover{
+    color:#38bdf8;
+    padding-left:5px;
+}
+
+.social-icons{
+    display:flex;
+    gap:12px;
+    margin-top:10px;
+}
+
+.social-icons a{
+    width:40px;
+    height:40px;
+    background:#1f2937;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:20px;
+}
+
+.social-icons a:hover{
+    background:#38bdf8;
+    color:white;
+}
+
+.footer-bottom{
+    border-top:1px solid #374151;
+    text-align:center;
+    padding:20px;
+    color:#94a3b8;
+}
+</style>
+</head>
+<body>
+
+<footer class="footer">
+
+    <div class="footer-top">
+
+        <div class="footer-section">
+            <h3>ShopKart</h3>
+            <p>
+                Your one-stop destination for fashion,
+                electronics, groceries and lifestyle products.
+            </p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Offers</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="footer-section">
+            <h4>Customer Service</h4>
+            <a href="#">Help Center</a>
+            <a href="#">Track Order</a>
+            <a href="#">Returns</a>
+            <a href="#">FAQs</a>
+        </div>
+
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+
+            <div class="social-icons">
+                <a href="#">📘</a>
+                <a href="#">📸</a>
+                <a href="#">🐦</a>
+                <a href="#">💼</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 ShopKart | All Rights Reserved
+    </div>
+</footer>
+</body>
+</html>
