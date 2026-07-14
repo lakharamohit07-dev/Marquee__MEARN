@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project1</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f3f6fb;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+}
+
+.heading{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.heading h1{
+    font-size:48px;
+    color:#1d3f91;
+    margin-bottom:15px;
+}
+
+.heading p{
+    color:#666;
+    font-size:18px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    position:relative;
+    background:#fff;
+    width:340px;
+    padding:35px 28px;
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    overflow:hidden;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.quote{
+    position:absolute;
+    top:0;
+    right:0;
+    width:70px;
+    height:70px;
+    background:#2f72ff;
+    color:white;
+    font-size:34px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-bottom-left-radius:35px;
+}
+
+.card h3{
+    color:#23408f;
+    text-align:center;
+    margin-top:10px;
+}
+
+.designation{
+    text-align:center;
+    color:#ff6b4a;
+    font-weight:bold;
+    font-size:15px;
+    margin:8px 0 15px;
+}
+
+.stars{
+    text-align:center;
+    color:#ffc107;
+    font-size:20px;
+    letter-spacing:2px;
+    margin-bottom:20px;
+}
+
+.card p{
+    color:#555;
+    line-height:1.8;
+    font-size:16px;
+    text-align:justify;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="heading">
+        <h1>What Our Clients Say</h1>
+        <p>Read what our satisfied clients have to say about working with QASSERT</p>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="quote">❞</div>
+
+            <h3>John Miller</h3>
+
+            <div class="designation">
+                Software Architect
+            </div>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                QAssert provided exceptional software testing support,
+                ensuring our product was released bug-free and on schedule.
+                Their attention to detail and professional approach made
+                them a great partner.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="quote">❞</div>
+
+            <h3>Samantha Turner</h3>
+
+            <div class="designation">
+                Product Manager
+            </div>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                Working with QAssert was a great experience. Their team
+                quickly identified critical issues, suggested improvements,
+                and ensured our product met the highest quality standards.
+                Highly recommended!
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="quote">❞</div>
+
+            <h3>Michael Johnson</h3>
+
+            <div class="designation">
+                Tech Lead
+            </div>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                QAssert's thorough testing saved us time and resources.
+                Their reports were comprehensive and actionable, helping
+                us maintain product quality. Looking forward to more
+                collaborations!
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
