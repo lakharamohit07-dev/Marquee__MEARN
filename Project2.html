@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Our Services</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: #fff;
+      }
+
+      .container {
+        width: 1200px;
+        margin: 70px auto;
+      }
+
+      .title {
+        text-align: center;
+        color: #163b8f;
+        font-size: 52px;
+        font-weight: 700;
+        margin-bottom: 70px;
+      }
+
+      .services {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 70px;
+        row-gap: 55px;
+      }
+
+      .service {
+        display: flex;
+        align-items: flex-start;
+        cursor: pointer;
+      }
+
+      .icon {
+        width: 72px;
+        height: 72px;
+        min-width: 72px;
+        border-radius: 50%;
+        background: #fff;
+        color: #555;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 28px;
+        margin-right: 22px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        transition: 0.35s ease;
+      }
+
+      .content h3 {
+        color: #222;
+        font-size: 21px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        transition: 0.35s;
+      }
+
+      .content p {
+        color: #666;
+        font-size: 15px;
+        line-height: 1.8;
+      }
+
+      /* Hover Effect */
+
+      .service:hover .icon {
+        background: #ff4b4b;
+        color: #fff;
+        transform: translateY(-5px) scale(1.06);
+        box-shadow: 0 15px 30px rgba(255, 75, 75, 0.35);
+      }
+
+      .service:hover h3 {
+        color: #ff4b4b;
+      }
+
+      @media (max-width: 1100px) {
+        .container {
+          width: 90%;
+        }
+
+        .services {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .services {
+          grid-template-columns: 1fr;
+        }
+
+        .title {
+          font-size: 38px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="title">Our Services</h1>
+
+      <div class="services">
+        <!-- Manual Testing -->
+
+        <div class="service">
+          <div class="icon">
+            <i class="fa-solid fa-clipboard-check"></i>
+          </div>
+
+          <div class="content">
+            <h3>Manual Testing</h3>
+            <p>
+              Comprehensive manual testing to ensure your software functions as
+              intended.
+            </p>
+          </div>
+        </div>
+
+        <!-- Automated Testing -->
+
+        <div class="service">
+          <div class="icon">
+            <i class="fa-solid fa-gears"></i>
+          </div>
+
+          <div class="content">
+            <h3>Automated Testing</h3>
+            <p>
+              Efficient and reliable automated testing solutions to save time
+              and resources.
+            </p>
+          </div>
+        </div>
+
+        <!-- API Testing -->
+
+        <div class="service">
+          <div class="icon">
+            <i class="fa-solid fa-code-branch"></i>
+          </div>
+
+          <div class="content">
+            <h3>API Testing</h3>
+            <p>
+              We help you deliver seamless and high-quality digital experiences
+              by thoroughly evaluating your APIs.
+            </p>
+          </div>
+        </div>
+
+        <div class="service">
+          <div class="icon">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+          </div>
+
+          <div class="content">
+            <h3>Mobile Testing</h3>
+            <p>
+              Ensure seamless functionality across Android and iOS devices with
+              comprehensive mobile application testing.
+            </p>
+          </div>
+        </div>
+
+        <div class="service">
+          <div class="icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+
+          <div class="content">
+            <h3>Security Testing</h3>
+            <p>
+              Identify vulnerabilities and safeguard your applications against
+              security threats and cyber attacks.
+            </p>
+          </div>
+        </div>
+
+        <div class="service">
+          <div class="icon">
+            <i class="fa-solid fa-users"></i>
+          </div>
+
+          <div class="content">
+            <h3>Usability Testing</h3>
+            <p>
+              Enhance user experience by evaluating application usability,
+              navigation and accessibility.
+            </p>
+          </div>
+        </div>
+
+        <div class="service">
+          <div class="icon">
+            <i class="fa-solid fa-gauge-high"></i>
+          </div>
+
+          <div class="content">
+            <h3>Performance Testing</h3>
+            <p>
+              Measure speed, stability and responsiveness to ensure your
+              application performs under all conditions.
+            </p>
+          </div>
+        </div>
+
+        <div class="service">
+          <div class="icon">
+            <i class="fa-solid fa-universal-access"></i>
+          </div>
+
+          <div class="content">
+            <h3>Accessibility Testing</h3>
+            <p>
+              Make your applications inclusive by verifying compliance with
+              accessibility standards and guidelines.
+            </p>
+          </div>
+        </div>
+
+        <div class="service">
+          <div class="icon">
+            <i class="fa-solid fa-eye"></i>
+          </div>
+
+          <div class="content">
+            <h3>Visual Testing</h3>
+            <p>
+              Maintain consistent layouts, fonts and design across browsers,
+              devices and screen sizes.
+            </p>
+          </div>
+        </div>
+
+        <div class="service">
+          <div class="icon">
+            <i class="fa-solid fa-display"></i>
+          </div>
+
+          <div class="content">
+            <h3>Compatibility Testing</h3>
+            <p>
+              Verify compatibility across different operating systems, browsers
+              and hardware configurations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
