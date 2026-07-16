@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .banner {
+        width: 100%;
+        height: 200px;
+      }
+      .products {
+        width: 90%;
+        margin: 25px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 50px;
+      }
+      .card {
+        width: 300px;
+        margin: 20px;
+        padding: 15px;
+        background: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+      }
+      .title {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 10px 0;
+      }
+      .description {
+        font-size: 14px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner"></div>
+    <div class="products">
+      <div class="card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4MvWDPf8NTO21V26LUk13MimcfJHDvku2zNnzZgMYCH5FlzyYnQdID7E&s=10.jpg"
+          alt="Product 1"
+        />
+        <div class="title">Kitchen Remodials</div>
+        <div class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+          quod.
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0683/7338/1440/files/Living-and-dining.jpg?v=1767936473.jpg"
+          alt="Product 1"
+        />
+        <div class="title">Furniture</div>
+        <div class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+          quod.
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfTNUHL1viPe-JcGK7Kl3OSBHiy6dt4iqsE6P_q8pMXyFuT2B_uB7WflFX&s=10.jpg"
+          alt="Product 1"
+        />
+        <div class="title">Home Decor</div>
+        <div class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+          quod.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

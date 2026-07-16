@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FlipkartStore</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: #f1f3f6;
+      }
+
+      header {
+        width: 100%;
+        height: 70px;
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .logo {
+        font-size: 28px;
+        font-weight: 700;
+        color: #2874f0;
+      }
+
+      .search {
+        width: 45%;
+        height: 45px;
+        background: #f0f5ff;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        padding: 0 18px;
+      }
+
+      .search i {
+        font-size: 18px;
+        color: #555;
+      }
+
+      .search input {
+        width: 100%;
+        border: none;
+        outline: none;
+        background: transparent;
+        margin-left: 15px;
+        font-size: 16px;
+      }
+
+      .menu {
+        display: flex;
+        gap: 35px;
+        align-items: center;
+      }
+
+      .menu div {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .menu div:hover {
+        color: #2874f0;
+      }
+
+      .categories {
+        width: 95%;
+        margin: 20px auto;
+        background: white;
+        padding: 20px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 8px;
+      }
+
+      .category {
+        text-align: center;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .category:hover {
+        transform: translateY(-5px);
+      }
+
+      .category img {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      .category p {
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      .hero {
+        width: 95%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 20px;
+      }
+
+      .main-banner img {
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      .side-banner {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .offer {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .offer img {
+        width: 100%;
+        height: 130px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">FlipKart</div>
+
+      <div class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input type="text" placeholder="Search for Products, Brands and More" />
+      </div>
+
+      <div class="menu">
+        <div>
+          <i class="fa-regular fa-user"></i>
+
+          <span>Login</span>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-store"></i>
+
+          <span>Seller</span>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-cart-shopping"></i>
+
+          <span>Cart</span>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </div>
+    </header>
+
+    <section class="categories">
+      <div class="category">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrMksHq5C-rgOQfahs5qS5_tzdFysMWT0zL4B4T70LCg&s=10" />
+        <p>Grocery</p>
+      </div>
+
+      <div class="category">
+        <img src="https://www.sathya.store/img/product/FAb9jtNpEjJeGtMP.png" />
+        <p>Mobiles</p>
+      </div>
+
+      <div class="category">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7OTeGEf1xEJD_FGo1VhPNS9SIwldvbK3wxfWnZMI3ihl0TExTv_XeRfaf&s=10" />
+        <p>Fashion</p>
+      </div>
+
+      <div class="category">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeIjfibg5AoRyVyUJjMUB95XnQqS55CNDVqaXJ9yJgu3BsogwITvdN9sM&s=10" />
+        <p>Electronics</p>
+      </div>
+
+      <div class="category">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ccbYQph-n0WNao50ZftJciiIUVnlxVShF6zwUJfOg1_RKx3E8U4SnRlp&s=10" />
+        <p>Home</p>
+      </div>
+
+      <div class="category">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZYJGhffUDJjpjLEu7gOqOhWVhUEW3NbsZOEti2Jmm-Q&s=10" />
+        <p>Appliances</p>
+      </div>
+
+      <div class="category">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR34h3DjI561peUr-TwH1IxrxKyai_z2WAe-022VOi_eA&s=10" />
+        <p>Travel</p>
+      </div>
+
+      <div class="category">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg-Hs2BwngSMYF258qfHw13-vothW41Gj4bL4EpUXw3A&s" />
+        <p>Beauty</p>
+      </div>
+
+      <div class="category">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv7AA6IpXwCDgoC_I87Y1YJ_wH_VaoeDn4u58R08oaJg&s=10" />
+        <p>Toys</p>
+      </div>
+    </section>
+
+    <section class="hero">
+      <div class="main-banner">
+        <img src="https://i.pinimg.com/736x/9d/a5/ce/9da5cee000d4056882a12624a1297be5.jpg"/>
+      </div>
+
+      <div class="side-banner">
+        <div class="offer">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxsTCLLsVOUL4zGKixpg0lroiooMhCQoUcV15F3YmvISiobURNjF6giCM&s=10" />
+        </div>
+
+        <div class="offer">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFUCSDtTvrVh6OZfClhSWE_9I1NdVvjj1UMKJPc0sqRJKxEH9qlkJRQzs&s=10" />
+        </div>
+
+        <div class="offer">
+          <img src="https://savesage.club/_next/image?url=https%3A%2F%2Fd3dx7t8uh9asmu.cloudfront.net%2FblogImages%2FFlipkart_Blog_Creative.png&w=3840&q=75" />
+        </div>
+      </div>
+    </section>
+
+    <style>
+      .section {
+        width: 95%;
+        margin: 25px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .section-header h2 {
+        font-size: 26px;
+      }
+
+      .section-header button {
+        background: #2874f0;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .products {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+      }
+
+      .product {
+        background: white;
+        border: 1px solid #eee;
+        border-radius: 10px;
+        text-align: center;
+        padding: 15px;
+        transition: 0.3s;
+      }
+
+      .product:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+      }
+
+      .product img {
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+        margin-bottom: 15px;
+      }
+
+      .product h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      .product p {
+        color: green;
+        font-weight: 600;
+      }
+
+      .product span {
+        display: block;
+        color: gray;
+        margin-top: 6px;
+      }
+    </style>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>Suggested For You</h2>
+
+        <button>View All</button>
+      </div>
+
+      <div class="products">
+        <div class="product">
+          <img src="https://t4.ftcdn.net/jpg/03/77/76/03/360_F_377760368_dvPR39qE5QHKT9CDEnTsC8RVzueuIGUl.jpg" />
+          <h4>Wireless Headphones</h4>
+          <p>From ₹999</p>
+          <span>Noise | Boat</span>
+        </div>
+
+        <div class="product">
+          <img src="https://www.fastrack.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dw8178fcf1/images/Fastrack/Catalog/38156NM01_1.jpg?sw=360&sh=360" />
+          <h4>Smart Watch</h4>
+          <p>From ₹1499</p>
+          <span>FireBoltt</span>
+        </div>
+
+        <div class="product">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQuZrKG081OWlEmPMA74iCaWKgiEdWfFtlqzViZCeVFA&s=10" />
+          <h4>Bluetooth Speaker</h4>
+          <p>From ₹799</p>
+          <span>JBL</span>
+        </div>
+
+        <div class="product">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4zG96xcl5SirUV6oST8GxQebw7l3uM8s5ntl-ljy67lH-sFcxARiohqc&s=10" />
+          <h4>Laptop Bag</h4>
+          <p>From ₹699</p>
+          <span>Skybags</span>
+        </div>
+
+        <div class="product">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpHf_7TNUk1FR2qs4nQTNmqqC5pCtP4iLRHD-NzlQdSA&s=10" />
+          <h4>Gaming Mouse</h4>
+          <p>From ₹499</p>
+          <span>Logitech</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>Best Deals</h2>
+
+        <button>View All</button>
+      </div>
+
+      <div class="products">
+        <div class="product">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_7z0QEHBPALp09t65ZMUYvCaag-YFkynCgenQTiTUHg&s" />
+          <h4>Running Shoes</h4>
+          <p>Min 60% Off</p>
+          <span>Nike</span>
+        </div>
+
+        <div class="product">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlnANANJe3IsosiMUGrZ1-JD1RvEjd-ib4_JlRxx8U0F3wvkUbQZjAAqh8&s=10" />
+          <h4>Keyboard</h4>
+          <p>From ₹999</p>
+          <span>HP</span>
+        </div>
+
+        <div class="product">
+          <img src="https://m.media-amazon.com/images/I/51gwRZQ4ulL._AC_UF1000,1000_QL80_.jpg" />
+          <h4>Power Bank</h4>
+          <p>From ₹899</p>
+          <span>Mi</span>
+        </div>
+
+        <div class="product">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmaC3FG-G_f7C_lzCjgY0lRotEibUz-Bz0j40Qwtkmtzn02-UL0bimX8-5&s=10"/>
+          <h4>Monitor</h4>
+          <p>From ₹7499</p>
+          <span>LG</span>
+        </div>
+
+        <div class="product">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThPF75JRS9k7zvM76npO_ZM5mV_je9HikosMaHLXHOjImDfmWlDWy31G7c&s=10" />
+          <h4>DSLR Camera</h4>
+          <p>From ₹24999</p>
+          <span>Canon</span>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      footer {
+        background: #172337;
+        color: white;
+        margin-top: 40px;
+        padding: 40px;
+      }
+
+      .footer-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+      }
+
+      .footer-container h3 {
+        margin-bottom: 15px;
+      }
+
+      .footer-container p {
+        margin: 8px 0;
+        color: #ddd;
+        cursor: pointer;
+      }
+
+      .footer-container p:hover {
+        color: white;
+      }
+
+      .copyright {
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        margin-top: 30px;
+        padding-top: 20px;
+        color: #ccc;
+      }
+
+      @media (max-width: 1100px) {
+        .products {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .hero {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 768px) {
+        header {
+          padding: 20px;
+          height: auto;
+          flex-direction: column;
+          gap: 15px;
+        }
+
+        .search {
+          width: 100%;
+        }
+
+        .categories {
+          overflow: auto;
+          gap: 20px;
+        }
+
+        .products {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .footer-container {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .products {
+          grid-template-columns: 1fr;
+        }
+
+        .footer-container {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+
+    <footer>
+      <div class="footer-container">
+        <div>
+          <h3>About</h3>
+          <p>Contact Us</p>
+          <p>About Us</p>
+          <p>Careers</p>
+          <p>Press</p>
+        </div>
+
+        <div>
+          <h3>Help</h3>
+          <p>Payments</p>
+          <p>Shipping</p>
+          <p>Cancellation</p>
+          <p>FAQ</p>
+        </div>
+
+        <div>
+          <h3>Policy</h3>
+          <p>Return Policy</p>
+          <p>Privacy Policy</p>
+          <p>Terms Of Use</p>
+        </div>
+
+        <div>
+          <h3>Social</h3>
+          <p>Facebook</p>
+          <p>Instagram</p>
+          <p>Twitter</p>
+          <p>YouTube</p>
+        </div>
+      </div>
+
+      <div class="copyright">© 2026 FlipKart. All Rights Reserved.</div>
+    </footer>
+
+    <script>
+      const products = document.querySelectorAll(".product");
+
+      products.forEach((card) => {
+        card.addEventListener("mouseenter", () => {
+          card.style.cursor = "pointer";
+        });
+      });
+    </script>
+  </body>
+</html>
